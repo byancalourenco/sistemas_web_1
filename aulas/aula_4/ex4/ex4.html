@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex 4</title>
+</head>
+<body>
+    <h1>EXERCÍCIO 4</h1>
+    <p>
+        Crie um formulário onde o usuário informa seu nome, seu e-mail, sua data de
+        nascimento e escolha numa lista suspensa a bandeira do seu cartão de crédito. Ao clicar
+        em em botão de submit, exiba todos os dados na tela e não exiba o formulário após o
+        preenchimento
+    </p>
+
+    <form action="ex4.php" method="post">
+        <p>Nome: <input type="text" name="nome" required></p>
+        <p>Email: <input type="email" name="email" required></p>
+        <p>Data de nascimento: <input type="date" name="data" required></p>
+        <p>Cartão:</p>
+        <select name="cartao" required>
+            <option value="ver opçoes">ver opções</option>
+            <option value="mastercard">mastercard</option>
+            <option value="maestro">maestro</option>
+            <option value="visa">visa</option>
+            <option value="american express">american express</option>
+            <option value="hipercard">hipercard</option>
+        </select>
+        <input type="submit" value="enviar">
+    </form>
+</body>
+</html>
